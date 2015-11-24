@@ -13,3 +13,6 @@ RUN apt-get -y install oracle-java8-installer && apt-get clean
 # Set oracle java as the default java
 RUN update-java-alternatives -s java-8-oracle
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+
+# Install maven
+RUN apt-get -y install maven
